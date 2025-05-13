@@ -40,3 +40,53 @@ Open a terminal or PowerShell
 - Run the generated executable:
 
    1. ./Main.exe     
+
+
+
+
+
+📜 Explanation of the Code
+🔹 Data Model
+
+data YearStats = YearStats
+  { yr :: Int        
+  , warImpact :: Double   
+  , economyGrowth :: Double 
+  , trustLevel :: Double  
+  }
+Each YearStats value represents data for a single year: war impact, economic growth, and public trust level.
+
+🔹 Simulation Logic
+calculateNewFranc takes the stats for a year and the current currency value.
+
+It calculates the next year's currency based on:
+
+  -War penalty: war * 0.3
+
+Economic bonus: economyGrowth * 0.2
+
+Trust boost: trustLevel * 0.5
+
+Formula:
+
+  -newValue = oldValue * (1 + bonus + boost - penalty)
+
+🔹 Recursive Simulation
+
+simulateAllYears :: Double -> [YearStats] -> IO ()
+This function prints the value of the currency for each year.
+
+It uses recursion to step through each YearStats entry.
+
+Currency changes are printed year-by-year.
+
+🔹 Entry Point
+
+   main :: IO ()
+   main = do
+   let startFranc = 100.0
+   simulateAllYears startFranc yearStatsList
+
+  
+- Starts with a New Franc value of 100.0 in 1954.
+- Simulates until 1962 using historical-like stats.
