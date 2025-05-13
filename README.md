@@ -27,7 +27,7 @@ To run this project, you'll need to install the Haskell toolchain.
 
 
 
-🚀 How to Run the Program
+**🚀 How to Run the Program**
 Open a terminal or PowerShell
 
 - Navigate to your project directory:
@@ -45,8 +45,8 @@ Open a terminal or PowerShell
 
 
 
-📜 Explanation of the Code
-🔹 Data Model
+📜 **Explanation of the Code**
+🔹 **Data Model**
 
 data YearStats = YearStats
   { yr :: Int        
@@ -56,7 +56,7 @@ data YearStats = YearStats
   }
 Each YearStats value represents data for a single year: war impact, economic growth, and public trust level.
 
-🔹 Simulation Logic
+🔹 **Simulation Logic**
 calculateNewFranc takes the stats for a year and the current currency value.
 
 It calculates the next year's currency based on:
@@ -71,7 +71,7 @@ Formula:
 
   -newValue = oldValue * (1 + bonus + boost - penalty)
 
-🔹 Recursive Simulation
+**🔹 Recursive Simulation**
 
 simulateAllYears :: Double -> [YearStats] -> IO ()
 This function prints the value of the currency for each year.
@@ -80,7 +80,7 @@ It uses recursion to step through each YearStats entry.
 
 Currency changes are printed year-by-year.
 
-🔹 Entry Point
+**🔹 Entry Point**
 
    main :: IO ()
    main = do
@@ -88,5 +88,5 @@ Currency changes are printed year-by-year.
    simulateAllYears startFranc yearStatsList
 
   
-- Starts with a New Franc value of 100.0 in 1954.
-- Simulates until 1962 using historical-like stats.
+**- Starts with a New Franc value of 100.0 in 1954.**
+**- Simulates until 1962 using historical-like stats.**
