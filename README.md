@@ -1,10 +1,10 @@
-# 📈 New Franc Simulator – Haskell Project
+#  New Franc Simulator – Haskell Project
 
 This Haskell program simulates the impact of war, economic growth, and public trust on a fictional currency called the **"New Franc"** over several years.
 
 ---
 
-## ⚙️ How to Set Up Haskell on Windows 11
+## How to Set Up Haskell on Windows 11
 
 To run this project, you'll need to install the Haskell toolchain.
 
@@ -12,7 +12,7 @@ To run this project, you'll need to install the Haskell toolchain.
 
 **GHCup** is the easiest way to install Haskell on Windows.
 
-🔗 [https://www.haskell.org/ghcup/](https://www.haskell.org/ghcup/)
+ [https://www.haskell.org/ghcup/](https://www.haskell.org/ghcup/)
 
 #### Steps:
 1. Download and run the GHCup installer for Windows.
@@ -27,7 +27,7 @@ To run this project, you'll need to install the Haskell toolchain.
 
 
 
-**🚀 How to Run the Program**
+**How to Run the Program**
 Open a terminal or PowerShell
 
 - Navigate to your project directory:
@@ -45,7 +45,7 @@ Open a terminal or PowerShell
 
 
 
-📜 **Explanation of the Code**
+**Explanation of the Code**
 🔹 **Data Model**
 
 data YearStats = YearStats
