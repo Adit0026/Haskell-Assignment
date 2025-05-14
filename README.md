@@ -22,8 +22,8 @@ To run this project, you'll need to install the Haskell toolchain.
    - HLS (optional: Haskell Language Server)
 3. After installation, verify it worked:
    ```bash
-  ghc --version
-  cabal --version
+   ghc --version
+   cabal --version
 
 
 
